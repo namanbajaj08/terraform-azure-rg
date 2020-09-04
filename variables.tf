@@ -1,11 +1,12 @@
-// Resource Group Module variables
-
-variable "name" {
-  type    = string
-
+variable "location" {
+  description = "Resource Group Location"
+  default     = "West US"
 }
 
-variable "location" {
-  type    = string
+variable "name" {
+  description = "Resource Group Name"
+}
 
+variable "tags" {
+  description = "Environment tag for the resource group (i.e. 'Production')"
 }
